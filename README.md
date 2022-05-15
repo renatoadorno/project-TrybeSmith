@@ -771,7 +771,7 @@ Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência 
     ```json
       {
         "userId": 1,
-        "products": [1],
+        "productsIds": [1],
       }
     ```
 
@@ -780,7 +780,7 @@ Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência 
     ```json
       {
         "userId": 1,
-        "products": [1, 2]
+        "productsIds": [1, 2]
       }
     ```
 </details>

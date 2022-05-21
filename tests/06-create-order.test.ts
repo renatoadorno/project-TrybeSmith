@@ -1,6 +1,6 @@
 import request from 'supertest';
 import app from '../src/app';
-import connection from '../src/models/connection';
+import connection from '../src/database/connection';
 import recreateDatabase from './recreateDatabase';
 
 require('mysql2/node_modules/iconv-lite').encodingExists('foo');
@@ -127,7 +127,7 @@ describe('6 - Crie um endpoint para o cadastro de um pedido', function() {
       name: 'Porção de Falafel +7',
       amount: '1 moeda de prata',
     };
-  
+
     await request(app).post('/products').send(fakeProduct).set('Authorization', token);
     await request(app).post('/products').send(fakeProduct2).set('Authorization', token);
 

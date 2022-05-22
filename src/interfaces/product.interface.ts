@@ -1,7 +1,7 @@
 interface IProduct {
   id: number;
   name: string;
-  quantity: number;
+  amount: string;
 }
 
 export default IProduct;

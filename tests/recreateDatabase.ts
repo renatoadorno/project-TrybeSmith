@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 import { Pool } from 'mysql2/promise';
-import connection from '../src/database/connection';
+import connection from '../src/models/connection';
 
 export default async function recreateDatabase(conn: Pool) {
   try {

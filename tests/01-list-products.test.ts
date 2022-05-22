@@ -1,7 +1,7 @@
 import request from "supertest";
 import app from "../src/app";
 import recreateDatabase from "./recreateDatabase";
-import connection from '../src/database/connection'
+import connection from '../src/models/connection'
 
 require('mysql2/node_modules/iconv-lite').encodingExists('foo');
 

@@ -1,11 +1,7 @@
 import type { NextFunction, Request, Response } from 'express';
+import IError from './interfaces';
 
-const errorHandler = (
-  err: { statusCode: number; message: string; },
-  _req: Request,
-  res: Response,
-  _next: NextFunction,
-) => {
+const errorHandler = (err: IError, _req: Request, res: Response, _next: NextFunction) => {
   const { statusCode, message } = err;
 
   if (statusCode) {

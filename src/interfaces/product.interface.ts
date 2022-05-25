@@ -4,4 +4,8 @@ interface IProduct {
   amount: string;
 }
 
-export default IProduct;
+interface IAllProducts extends IProduct {
+  orderId: number;
+}
+
+export type { IProduct, IAllProducts };

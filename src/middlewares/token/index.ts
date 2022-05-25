@@ -4,7 +4,7 @@ import jwtConfig from './jwtConfig';
 
 dotenv.config();
 
-type TokenPayload = {
+type Payload = {
   data: string;
 };
 
@@ -20,7 +20,7 @@ const createToken = (userId: number) => {
 
 const verifyToken = (token: string) => {
   try {
-    return jwt.verify(token, secret) as TokenPayload;
+    return jwt.verify(token, secret) as Payload;
   } catch (err) {
     return null;
   }

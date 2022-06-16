@@ -47,7 +47,7 @@ Para rodar o Docker:
 
 ### Passo 3 - Criar o banco de dados
 
-Utilizando uma ferramenta de gerenciamento do banco de dados MySQL como **MySQL Workbench**, **DataGrip** ou qualquer outra, execute o código do arquivo `Trybesmith.sql`
+Utilizando uma ferramenta de gerenciamento do banco de dados MySQL como o **MySQL Workbench**, **DataGrip** ou qualquer outra ferramenta semelhante, e execute o código do arquivo `Trybesmith.sql`
 
 ## Testando
 
